@@ -30,6 +30,32 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+        <!-- ウィジェットを登録
+        　　　Androidにウィジェットを認識させる -->
+        <receiver android:name=".MuscleWidgetReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/muscle_widget_info" />
+        </receiver>
+
+        <!-- HomeWidgetプラグインのバックグラウンドレシーバー
+        　　　ウィジェットのボタンをクリックした時に、バックグラウンドでFlutterのコールバックを実行するために必要 -->
+        <receiver android:name="es.antonborri.home_widget.HomeWidgetBackgroundReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="es.antonborri.home_widget.action.BACKGROUND" />
+            </intent-filter>
+        </receiver>
+
+        <!-- HomeWidgetプラグインのサービス
+        　　　Androidのジョブスケジューリングを利用して、バックグランド実行する本体 -->
+        <service
+            android:name="es.antonborri.home_widget.HomeWidgetBackgroundService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true" />
     </application>
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and
