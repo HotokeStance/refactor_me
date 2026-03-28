@@ -40,7 +40,9 @@
 
 <img src="./read_me/start_work_out.jpg" width=170>
 
-<video src="./read_me/do_work_out.mp4"　controls="true"></video>
+<p align="center" width="100%">
+<video src="https://github.com/user-attachments/assets/9bf1f5d4-06ee-4370-aa68-3341904f7e06" width="80%" controls></video>
+</p>
 
 ## カレンダー
 
