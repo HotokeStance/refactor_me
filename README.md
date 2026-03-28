@@ -1,16 +1,47 @@
 # refactor_me
 
-A new Flutter project.
+筋トレ記録をつけて、モチベーションを維持しましょう。
 
-## Getting Started
+## トップ画面
 
-This project is a starting point for a Flutter application.
+<img src="./read_me/top.jpg" width=170>
 
-A few resources to get you started if this is your first Flutter project:
+【種目管理】
+- 筋トレの種目を作成します。<br />
+例）腕立て、スクワット等
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+【メニュー管理】
+- 作成した種目を選択して、メニューを作成します。
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+【筋トレ記録】
+- トレーニングの記録を閲覧できます。
+「トレーニング開始」からセット完了することで記録されます
+
+【トレーニング開始】
+- メニューを選択して、トレーニングを開始できます
+
+## 筋トレ種目の追加
+
+まずは種目を追加！
+
+<img src="./read_me/add_exercise.jpg" width=170>
+
+## メニュー管理
+
+種目を元にお好みのメニューを作成！
+
+<img src="./read_me/add_menu.jpg" width=170>
+
+## ホーム画面にウィジェットを設置
+
+<img src="./read_me/widget.jpg" width=170>
+
+## トレーニング開始
+
+<img src="./read_me/start_work_out.jpg" width=170>
+
+<video src="./read_me/do_work_out.mp4"　controls="true"></video>
+
+## カレンダー
+
+<img src="./read_me/calender.jpg" width=170>
